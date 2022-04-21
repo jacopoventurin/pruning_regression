@@ -106,8 +106,8 @@ class Spectral(nn.Module):
     
     def pruning_diag(self, 
                      perc: float, 
-                     start_grad: bool = True, 
-                     end_grad: bool = True, 
+                     start_grad: bool = False, 
+                     end_grad: bool = False, 
                      base_grad: bool = True):
         """
         This method apply a pruning procedure, acting directly on the elements in the diagonal of this class 
